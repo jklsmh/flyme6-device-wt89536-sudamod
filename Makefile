@@ -86,7 +86,7 @@ vendor_modify_jars := com.qti.dpmframework framework qti-telephony-common servic
 # The default value is nothing.
 # You can configure the board system file path which relative to the system directory in the board release.
 #-----------------------------------------------------------------------------
-#board_saved_files :=
+board_saved_files :=vendor/lib64/libnfc-nci.so vendor/lib64/libnfc_nci_jni.so
 
 ##############################################################################
 # The value decides which board system apk you want to remove.

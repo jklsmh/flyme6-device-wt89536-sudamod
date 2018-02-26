@@ -29,8 +29,8 @@
     <dimen name="config_alertDialogSelectionScrollOffset">0.0dip</dimen>
     <dimen name="toast_y_offset">64.0dip</dimen>
     <dimen name="status_bar_height">24.0dip</dimen>
-    <dimen name="navigation_bar_height">48.0dip</dimen>
-    <dimen name="navigation_bar_height_landscape">48.0dip</dimen>
+    <dimen name="navigation_bar_height">0dip</dimen>
+    <dimen name="navigation_bar_height_landscape">0dip</dimen>
     <dimen name="navigation_bar_width">48.0dip</dimen>
     <dimen name="navigation_bar_height_car_mode">96.0dip</dimen>
     <dimen name="navigation_bar_height_landscape_car_mode">96.0dip</dimen>

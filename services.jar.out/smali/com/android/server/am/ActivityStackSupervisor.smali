@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;,
         Lcom/android/server/am/ActivityStackSupervisor$ActivityContainer;,
         Lcom/android/server/am/ActivityStackSupervisor$ActivityDisplay;,
         Lcom/android/server/am/ActivityStackSupervisor$ActivityStackSupervisorHandler;,
@@ -1047,18 +1048,14 @@
 
     move-result-object v0
 
-    .line 3489
-    const v1, 0x10500c4
+    const v1, #android:dimen@default_minimal_size_resizable_task#t
 
-    .line 3488
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    .line 3487
     iput v0, p0, Lcom/android/server/am/ActivityStackSupervisor;->mDefaultMinSizeOfResizeableTask:I
 
-    .line 3486
     return-void
 .end method
 
@@ -15341,6 +15338,9 @@
     .param p4, "profilerInfo"    # Landroid/app/ProfilerInfo;
 
     .prologue
+
+    invoke-static/range {p1 .. p2}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->interceptAcquireGooglePlayServiceIntent(Landroid/content/Intent;Landroid/content/pm/ResolveInfo;)V
+
     const/4 v0, 0x0
 
     const/4 v4, 0x0
